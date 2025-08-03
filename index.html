@@ -184,6 +184,19 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+<head><button onclick="scrollToTop()" class="scroll-top" id="scrollTopBtn">⬆</button>
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  window.addEventListener('scroll', () => {
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    scrollBtn.classList.toggle('show', window.scrollY > 300);
+  });
+</script>
+</head>
+
 
 
 
