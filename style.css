@@ -23,6 +23,11 @@ header {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+h1 {
+  color: white;
+  font-size: 36px;
+}
+
 /* Navigation bar */
 nav {
   background-color: #0055a5;
@@ -84,98 +89,3 @@ form button {
 form button:hover {
   background-color: #004080;
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vethathiri Maharishi School</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- ✅ Header -->
-  <header>
-    <h1>Vethathiri Maharishi School</h1>
-    <p>SVG Puram, Thiruvallur District, Tamil Nadu</p>
-  </header>
-
-  <!-- ✅ Navigation Menu -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#facilities">Facilities</a>
-    <a href="#vision">Vision</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- ✅ Main Content -->
-  <main>
-    
-    <!-- ✅ About Section -->
-    <section id="about">
-      <h2>About Our School</h2>
-      <p>
-        Vethathiri Maharishi School is a holistic institution rooted in education,
-        character-building, and scientific spirituality. Located in SVG Puram, Thiruvallur,
-        it integrates traditional Indian values with modern education.
-      </p>
-    </section>
-
-    <!-- ✅ Facilities Section -->
-    <section id="facilities">
-      <h2>Our Facilities</h2>
-      <ul>
-        <li>Smart Classrooms</li>
-        <li>Well-equipped Science and Computer Labs</li>
-        <li>Library with Diverse Resources</li>
-        <li>Yoga and Meditation Training</li>
-        <li>Playground and Extracurricular Activities</li>
-      </ul>
-    </section>
-
-    <!-- ✅ Vision Section -->
-    <section id="vision">
-      <h2>Our Vision</h2>
-      <p>
-        To nurture well-rounded individuals with academic excellence,
-        emotional balance, moral strength, and spiritual wisdom.
-      </p>
-    </section>
-
-    <!-- ✅ Feedback Form -->
-    <section id="contact">
-      <h2>Contact & Feedback</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" required />
-
-        <label for="message">Your Message:</label>
-        <textarea id="message" rows="5" required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-  </main>
-
-  <!-- ✅ Footer -->
-  <footer>
-    <p>© 2025 Vethathiri Maharishi School. All Rights Reserved.</p>
-  </footer>
-
-</body>
-</html>
-body {
-  background-color: yellow;
-}
-h1 {
-  color: red;
-  font-size: 48px;
-}
-
-
-
-
