@@ -207,4 +207,36 @@ footer {
 .scroll-top.show {
   display: block;
 }
+.hero {
+  background-image: url('front view.jpg'); /* replace with your image */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+}
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+.btn {
+  display: inline-block;
+  background-color: #ffc107;
+  color: #333;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: #e0a800;
+}
+
 
