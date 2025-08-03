@@ -206,7 +206,7 @@ footer {
   display: block;
 }
 .hero {
-  background-image: url('https://postimg.cc/bZHR0BQN'); /* replace with your image */
+  background-image: url('<a href='https://postimg.cc/bZHR0BQN' target='_blank'><img src='https://i.postimg.cc/bZHR0BQN/front-view.jpg' border='0' alt='front-view'/></a>'); /* replace with your image */
   background-size: cover;
   background-position: center;
   color: white;
@@ -236,6 +236,7 @@ footer {
 .btn:hover {
   background-color: #e0a800;
 }
+
 
 
 
