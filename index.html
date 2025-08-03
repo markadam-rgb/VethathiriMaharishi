@@ -1,17 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vethathiri Maharishi School</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .menu-toggle {
+      display: none;
+      background-color: #0055a5;
+      color: white;
+      border: none;
+      font-size: 20px;
+      padding: 10px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+        flex-direction: column;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      nav a {
+        padding: 10px;
+        border-top: 1px solid white;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>Vethathiri Maharishi School – SVG Puram</h1>
     <p>Thiruvallur District, Tamil Nadu</p>
   </header>
 
-  <nav>
+  <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+  <nav id="mainNav">
     <a href="#vision">Vision & Mission</a>
     <a href="#academics">Academics</a>
     <a href="#features">Special Features</a>
@@ -22,48 +59,121 @@
   </nav>
 
   <div class="container">
-    <!-- All your sections -->
-    <!-- (same as what you already added: vision, academics, etc.) -->
+    
+    <section id="vision">
+      <h2>🎯 Vision and Mission</h2>
+      <p><strong>Vision:</strong> To develop a generation of students who are intellectually sharp, morally upright, emotionally balanced, and spiritually aware.</p>
+      <p><strong>Mission:</strong></p>
+      <ul>
+        <li>To impart holistic education that blends academics with ethics and self-discipline.</li>
+        <li>To cultivate physical, mental, and spiritual well-being in students through practices like yoga, meditation, and introspection, based on Maharishi’s teachings.</li>
+        <li>To create responsible citizens who contribute positively to society and the environment.</li>
+      </ul>
+    </section>
+
+    <section id="academics">
+      <h2>📚 Academics and Curriculum</h2>
+      <ul>
+        <li>Follows a curriculum aligned with CBSE or State Board.</li>
+        <li>Emphasis on value-based education, integrating moral science, life skills, and social responsibility.</li>
+        <li>Regular academic assessments, continuous evaluation, and project-based learning.</li>
+        <li>Equal importance to English, Tamil, and Mathematics, along with Science, Social Science, and Computer Studies.</li>
+        <li>Focused coaching for board exams and national-level competitive exams.</li>
+      </ul>
+    </section>
+
+    <section id="features">
+      <h2>🧘‍♂️ Special Features – Inspired by Vethathiri Maharishi</h2>
+      <h3>Yoga and Kaya Kalpa Yoga:</h3>
+      <p>Daily yoga sessions, including physical exercises, breathing techniques, meditation, and Kaya Kalpa—a rejuvenation system developed by Maharishi.</p>
+      
+      <h3>Moral and Spiritual Development:</h3>
+      <p>Regular classes on self-awareness, ethical living, and peace education. Students introspect to understand their thoughts and emotions.</p>
+      
+      <h3>Environmental Awareness:</h3>
+      <p>Eco-friendly practices like tree planting, clean campus drives, and awareness campaigns aligned with living in harmony with nature.</p>
+    </section>
+
+    <section id="campus">
+      <h2>🏡 Campus and Infrastructure</h2>
+      <ul>
+        <li>Located in a peaceful rural setting, ideal for learning and inner growth.</li>
+        <li>Ventilated classrooms, science and computer labs, and a library.</li>
+        <li>Playgrounds for physical activities.</li>
+        <li>Meditation halls or quiet spaces for introspection.</li>
+        <li>Clean, hygienic, and disciplined campus environment.</li>
+      </ul>
+    </section>
+
+    <section id="faculty">
+      <h2>🧑‍🏫 Faculty and Staff</h2>
+      <ul>
+        <li>Qualified, trained, and compassionate teachers who also mentor students.</li>
+        <li>Regular faculty development workshops on holistic education.</li>
+      </ul>
+    </section>
+
+    <section id="activities">
+      <h2>🏆 Extracurricular Activities</h2>
+      <ul>
+        <li>Opportunities in arts, crafts, music, drama, elocution, and debates.</li>
+        <li>Participation in inter-school and district competitions.</li>
+        <li>Celebration of cultural and national festivals to instill pride and heritage.</li>
+      </ul>
+    </section>
+
+    <section id="community">
+      <h2>🤝 Community and Parent Involvement</h2>
+      <ul>
+        <li>Strong parent-teacher collaboration encouraged.</li>
+        <li>Regular meetings and open houses.</li>
+        <li>Community service and social outreach programs for students.</li>
+      </ul>
+
+      <h3>🔗 Legacy of Vethathiri Maharishi</h3>
+      <p>The school operates under the principles of The World Community Service Centre (WCSC), founded by Vethathiri Maharishi. His mission: world peace through individual peace, beginning with education.</p>
+
+      <h3>📍 Location</h3>
+      <p>Vethathiri Maharishi School<br>SVG Puram,<br>Thiruvallur District,<br>Tamil Nadu, India.</p>
+    </section>
+
   </div>
 
   <footer>
     <p>&copy; 2025 Vethathiri Maharishi School. All rights reserved.</p>
   </footer>
 
-  <!-- 🔗 Chatbot -->
-  <!-- Replace YOUR-CHATBOT-ID with your real ID -->
   <script>
-    window.chatbaseConfig = { chatbotId: "YOUR-CHATBOT-ID" };
-  </script>
-  <script src="https://www.chatbase.co/embed.min.js" chatbotId="YOUR-CHATBOT-ID" defer></script>
+    function toggleMenu() {
+      const nav = document.getElementById('mainNav');
+      nav.classList.toggle('active');
+    }
 
-  <!-- ✅ Feedback Box -->
-  <div class="feedback-box">
-    <h2>We value your feedback!</h2>
-    <form action="https://formsubmit.co/your-email@example.com" method="POST">
-      <label for="name">Your Name:</label><br>
-      <input type="text" id="name" name="name" required><br>
-
-      <label for="email">Your Email (optional):</label><br>
-      <input type="email" id="email" name="email"><br>
-
-      <label for="message">Your Feedback:</label><br>
-      <textarea id="message" name="message" rows="5" required></textarea><br>
-
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
-
-      <button type="submit">Submit Feedback</button>
-    </form>
-  </div>
-
-  <!-- Scroll to Top -->
-  <button onclick="scrollToTop()" class="scroll-top">⬆</button>
-  <script>
     function scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
-</body>
+</body><section id="feedback">
+  <h2>📣 We Value Your Feedback</h2>
+  <form action="https://formsubmit.co/YOUR-EMAIL@example.com" method="POST">
+    
+    <label for="name">Your Name:</label><br />
+    <input type="text" id="name" name="name" required><br />
+
+    <label for="email">Your Email (optional):</label><br />
+    <input type="email" id="email" name="email"><br />
+
+    <label for="message">Your Feedback:</label><br />
+    <textarea id="message" name="message" rows="5" required></textarea><br />
+
+    <!-- Hidden settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+    <button type="submit">Submit Feedback</button>
+  </form>
+</section>
+
 </html>
+
 
