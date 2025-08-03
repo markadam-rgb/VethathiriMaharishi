@@ -192,7 +192,7 @@ footer {
 /* Scroll to top button */
 .scroll-top {
   position: fixed;
-  bottom: 30px;
+  bottom: 100px;
   right: 30px;
   background-color: #0055a5;
   color: white;
@@ -238,6 +238,7 @@ footer {
 .btn:hover {
   background-color: #e0a800;
 }
+
 
 
 
